@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class ApiService {
-  private apiUrl = 'http://localhost:3000/web_portafolio_api/services/pruebaApi'; // Ajusta tu URL según corresponda.
+  private apiUrl = 'https://webportafolioapi-production.up.railway.app/web_portafolio_api/services/pruebaApi'; // Ajusta tu URL según corresponda.
 
   getPruebaData(): Promise<string> {
     return fetch(this.apiUrl)
